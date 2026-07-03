@@ -12,7 +12,9 @@ from datetime import datetime, timedelta
 from collections import defaultdict
 from telebot import types
 
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # ========================= دیتابیس ساده =========================
